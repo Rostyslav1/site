@@ -1,0 +1,276 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.screen {
+		left: 42px;
+	}
+	.img-row {
+		width: 220px;
+	}
+	.comment,
+	.btn-submit {
+		padding: 0 39px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#header .menu {
+		display: none;
+		text-align: center;
+		clear: both;
+		float: none;
+	}
+	#header .menu a:hover {
+		border: 1px solid rgba(0, 0, 0, 0);
+		background-color: rgba(25, 189, 154, .5);
+		border-radius: 0;
+	}
+	#header .menu a {
+		padding: 5px;
+	}
+	#header .menu li {
+		display: block;
+	}
+	a.toggle {
+		display: block;
+	}
+	.bottom-opacity p {
+		margin-top: 32px;
+	}
+	.button {
+		padding-top: 40px;
+	}
+	.diagram {
+		margin: 0 auto;
+	}
+	.services {
+		padding-bottom: 30px;
+	}
+	.screen {
+		left: 20px;
+		-webkit-background-size: 80%;
+		background-size: 86%;
+		padding-top: 85px;
+		bottom: 15px;
+		left: -18px;
+	}
+	.img-row {
+		width: 270px;
+	}
+	.progress-bar > div {
+		width: 250px;
+	}
+	.content {
+		padding-left: 45px;
+	}
+	.offer {
+		margin-right: 3px;
+	}
+	.mail,
+	.phone {
+		float: none;
+	}
+	.comunicate {
+		width: 60%;
+		margin-bottom: 30px;
+	}
+	.mail .image, .office .image, .phone .image {
+		height: 230px;
+		-webkit-background-size: cover !important;
+		background-size: cover !important;
+	}
+	.form-data input {
+		width: 196px;
+	}
+	.video {
+		height: 270px !important;
+	}
+	.comunicate .fa {
+		margin-top: 35px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.about img {
+		margin: 40px auto 0;
+	}
+	.device {
+		text-align: center;
+		padding-right: 25px;
+	}
+	.button {
+		padding-top: 30px;
+	}
+	.describe-row {
+		margin-bottom: 30px;
+	}
+	.services .bg-3 li {
+		margin-left: 20px;
+	}
+	.services .bg-3 li:first-child {
+		margin-left: 0;
+	}
+	.r-1 {
+		padding-top: 30px;
+	}
+	.photo {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.about-person {
+		text-align: center;
+	}
+	.progress-bar > div {
+		margin: 30px auto 0;
+		width: 330px;
+	}
+	.about-person .progress-bar {
+		float: none;
+		
+	}
+	.content {
+		margin-top: 30px;
+	}
+	.testimonials img {
+		margin: 0 auto;
+	}
+	.content {
+		padding-left: 15px;
+		text-align: center !important;
+	}
+	.offer {
+		display: block;
+		margin: 0 auto 30px;
+		margin-right: auto !important;
+	}
+	.submit {
+		float: none;
+		margin-top: 20px;
+	}
+	.form-data input {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.subscribe-now .row:first-child {
+		padding: 0 24px;
+	}
+	.video {
+		margin: 100px auto 0 !important;
+	}
+	.news .overlay-2 {
+		padding: 75px 35px 95px;
+	}
+	.bot-news iframe {
+		height: 90%;
+		width: 100%;
+	}
+	.gray-pg {
+		right: 8% !important;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.jb h1 {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	.r-1 {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	.services .bg-3 li {
+		margin-left: -118px;
+	}
+	.r-1 .col-md-6:last-child .col-xs-4 {
+		float: none;
+		margin: 15px auto;
+		width: 140px;
+	}
+	.r-1 .col-md-6:last-child {
+		margin-top: 30px;
+	}
+	.start {
+		margin: 0 10px;
+	}
+	.testimonials li {
+		padding: 45px 45px 115px !important;
+	}
+	.team li {
+		padding: 45px 5px 115px !important;
+	}
+	.mail .image, .office .image, .phone .image {
+		height: 195px;
+	}
+	.comunicate {
+		width: 80%;
+	}
+	.video {
+		height: 190px !important;
+	}
+	.comunicate .fa {
+		margin-top: 24px;
+	}
+	.news .overlay-2 {
+		padding: 75px 15px 95px;
+	}
+	.gray-pg {
+		right: 5% !important;
+	}
+	.bot-news iframe {
+		height: 80%;
+		width: 87%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.mail .image, .office .image, .phone .image {
+		height: 150px;
+	}
+	.comunicate .fa {
+		margin-top: 0;
+	}
+	.gray-pg {
+		right: 3% !important;
+	}
+	.bot-news iframe {
+		height: 70%;
+		width: 100%;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.offer:last-child {
+		margin-right: 0;
+	}
+	.content {
+		text-align: left !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}

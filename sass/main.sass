@@ -1,0 +1,1063 @@
+@import "bourbon/bourbon"
+
+@mixin transition($time, $element, $type)
+	transition: $time $element $type
+
+$blue: #19bd9a
+$gray: #b2b3b3
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	color: #81868e
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+a
+	cursor: pointer
+
+*
+	margin: 0
+	padding: 0
+
+.span1
+	color: $blue
+	font-weight: bold
+
+.span2
+	color: #636971
+	font-weight: bold
+
+li
+	list-style: none
+
+.hidden
+	display: none
+
+.carousel img
+	width: 100%
+	height: auto
+
+.parallax
+	background-attachment: fixed
+	background-position: 50% 0
+	position: relative
+
+.text_center
+	text-align: center
+
+header
+	overflow: hidden
+	min-height: 300px
+
+.bg-img
+	background: url("img/Layer 1.jpg")
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: 50% 60%
+	width: 100%
+	font-size: 15px
+	font-weight: 500
+	padding: 0 0 40px
+	min-height: 100%
+
+#header
+	z-index: 2
+
+.overlay
+	background-color: rgba(0, 0, 0, 0.8)
+	position: fixed
+	right: 0
+	top: 0
+	opacity: 0
+	display: none
+	z-index: 2
+	width: 100%
+	height: 100%
+
+.overlay-active
+	opacity: 1
+	display: block
+
+.logo
+	float: left
+	padding: 14px
+	font-size: 20px
+	font-weight: bold
+	text-transform: uppercase
+
+.toggle
+	float: right
+	display: none
+	font-size: 21px
+	padding-top: 13px
+
+nav ul
+	padding: 5px
+	margin: 0
+
+.menu
+	display: block
+	text-align: right
+	float: right
+	a
+		border: 1px solid rgba(0, 0, 0, 0)
+		padding: 2px 16px
+		&:hover
+			border: 1px solid #fff
+
+nav a, .navbar a
+	display: block
+	padding: 2px 12px
+	color: #fff
+	margin-left: -4px
+	border-radius: 50px 50px
+
+.menu li, .navbar li
+	display: inline-block
+	padding: 10px 5px
+
+nav
+	position: fixed
+	left: 0
+	right: 0
+	padding-top: 10px
+	@include transition( 0.6s, all, ease-in-out)
+
+.jb
+	margin-top: 240px
+	color: #fff
+	h1
+		text-transform: uppercase
+		font-weight: 100
+		font-size: 35px
+		letter-spacing: 3px
+
+.bg-1
+	background: #fff
+
+.bg-2
+	background: #f3f3f3
+
+.bg-1, .bg-2
+	padding: 80px 0
+
+h2
+	font-size: 20px
+	font-family: "SourceSansPro"
+	color: rgb(51, 59, 70)
+	text-transform: uppercase
+	line-height: 0.6
+	font-weight: 100
+	margin-bottom: 40px
+	letter-spacing: 3px
+	line-height: 25px
+
+h3
+	margin-bottom: 30px
+
+.about
+	a
+		border: 1px solid #333b46
+		color: #333b46
+	h2
+		margin: 30px 0 45px
+	p
+		margin-bottom: 35px
+	padding: 75px 0 70px
+	.row > div
+		&:first-child, &:last-child
+			padding-left: 65px
+		&:first-child
+			padding-right: 65px
+
+.btn
+	padding: 5px 20px
+	border-radius: 50px 50px
+
+.about a
+	&:hover, &:focus
+		border-color: $blue
+		color: $blue
+
+.default
+	background-color: rgba(25, 189, 154, .6)
+	padding-top: 0
+	@include transition( 0.6s, all, ease-in-out)
+
+.fa
+	color: #fff
+
+.fafa2
+	display: none
+
+.details
+	a
+		margin: 0 auto
+	.bg-3 li
+		display: inline-block
+
+.fa-angle-down
+	font-size: 24px !important
+	line-height: 36px
+	@include transition( 0.35s, all, cubic-bezier(.09,-1.05,.71,2))
+
+.bg-ring-down
+	background: #19bd9a !important
+	border-radius: 50px 50px
+	width: 35px
+	height: 35px
+	display: block
+	margin: 0 auto
+	margin-top: 115px 0 15px
+	@include transition(0.25s, background, ease-in-out)
+
+.bg-ring-down:hover, .bg-ring-down:focus
+	background: rgba(0, 0, 0, 0) !important
+	.fa.fa-angle-down
+		font-size: 32px !important
+		line-height: 40px
+
+.bg-3 a:hover .bg-ring-href
+	background: #19bd9a
+	@include transition( 0.3s, background, ease-in-out)
+
+.active_a
+	background: #19bd9a !important
+
+.details
+	.bg-ring-href
+		margin-right: 12px
+		margin-left: 12px
+	.bg-3
+		margin-top: 55px
+
+.fa-r
+	font-size: 25px !important
+
+.bg-ring-href
+	border-radius: 50px 50px
+	background: #81868e
+	width: 50px
+	height: 50px
+	padding: 12px
+
+.r-1
+	padding: 55px 60px
+	.col-md-7 p
+	padding-top: 55px
+
+.left-img
+	background: url("../css//img/Layer 83.jpg")
+
+.right-img div
+	&:first-child
+		background: url("../css//img/Layer 14.jpg")
+	&:last-child
+		background: url("../css//img/Layer 15.jpg") 45% 0px
+
+.feature-projects
+	padding-bottom: 0
+
+.features p
+	margin-bottom: 60px
+
+.describe
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100% !important
+	padding-top: 20%
+	background-color: rgba(0, 0, 0, 0.6) !important
+	opacity: 0
+	-webkit-transition: .5s all
+	-o-transition: .5s all
+	transition: .5s all
+	color: #fff
+	text-transform: uppercase
+
+.img:hover .describe
+	opacity: 1
+	padding-top: 48%
+
+.img
+	height: 500px
+	background-size: cover !important
+	overflow: hidden
+
+.right-img div
+	&:last-child:hover
+		background: url("../css//img/Layer 18.jpg") 76% 0px
+	&:first-child:hover
+		background: url("../css//img/Layer 17.jpg") 55% 62%
+		-webkit-background-size: 180% !important
+		background-size: 180% !important
+
+.bottom-img
+	background: url("img/Layer 85.jpg") 50% 53%
+
+.bottom-opacity
+	&::before
+		content: ""
+		overflow: hidden
+		display: block
+	background: #1aa688
+	opacity: .5
+	z-index: 1
+	width: 100%
+	height: 100%
+	color: #fff
+	font-size: 16px
+	letter-spacing: 1px
+	position: relative
+	padding: 2px 0 39px
+	top: 0
+	left: 0
+
+.button
+	line-height: 23px
+	padding-top: 38px
+	a
+		color: #fff
+		border: 1px solid #fff
+		margin: auto
+		position: relative
+		overflow: hidden
+		display: block
+		width: 141px
+		&:hover
+			.line
+				left: 0
+				width: 100%
+				@include transition( 0.5s, all, ease-in-out)
+				z-index: -1
+			color: #000
+			@include transition( 0.5s, all, ease-in-out)
+
+.line
+	position: absolute
+	top: 0
+	left: 50%
+	height: 100%
+	width: 0%
+	background: #fff
+	z-index: 3
+	@include transition( 0.5s, all, ease-in-out)
+
+.bottom-opacity
+	p
+		margin-top: 45px
+	.col-sm-9 a
+		color: #fff
+		font-weight: 600
+
+.services .bg-3 li
+	margin-top: 15px
+	display: inline-block
+	&:first-child
+		margin-top: 0
+
+.btn-describe
+	display: none
+
+.btn-row > div:nth-child(2)
+	display: block
+
+.diagram
+	width: 125px
+	text-align: center
+	p
+		color: rgb(129, 134, 142)
+		font-size: 20px
+		margin-top: 18px
+
+.pr
+	font-size: 10px
+
+.r-1 .col-md-6:last-child
+	margin-top: 60px
+
+.impressed
+	width: 100%
+	color: #f3f3f3
+	background: url("img/Men.jpg") 0 45%
+	-webkit-background-size: cover
+	background-size: cover
+
+.mask
+	background-color: rgba(0, 0, 0, 0.85)
+	width: 100%
+	height: 100%
+	padding-bottom: 40px
+
+.text
+	margin-top: 75px
+
+.impressed
+	p
+		&:last-child
+			text-transform: uppercase
+			font-size: 14px
+		font-size: 16px
+		color: rgb(178, 179, 179)
+	h3
+		font-size: 20px
+		color: rgb(243, 243, 243)
+		text-transform: uppercase
+		font-weight: 100
+		letter-spacing: 2px
+
+.screen
+	background: url("img/Screen1.png") no-repeat top center
+	height: 327px
+	width: 409px
+	position: relative
+	left: 146px
+	bottom: 37px
+	font-size: 30px
+	color: rgba(255, 255, 255, 0.8)
+	text-transform: uppercase
+	font-weight: bold
+	font-family: "BigJohn",sans-serif
+	padding-top: 100px
+
+.span3
+	color: rgb(243, 243, 243)
+
+.navbar
+	margin-top: 70px
+	a
+		color: #808080
+
+.img-row
+	margin-bottom: 10px
+	-webkit-background-size: cover !important
+	background-size: cover !important
+	width: 270px
+	margin-right: 2.5px
+	margin-left: 2.5px
+	overflow: hidden
+	position: relative
+	&:hover .describe
+		opacity: 1
+		-webkit-transform: translate3d(0, 0, 0)
+		-ms-transform: translate3d(0, 0, 0)
+		-o-transform: translate3d(0, 0, 0)
+		transform: translate3d(0, 0, 0)
+		p, h2
+			opacity: 1
+			-webkit-transform: translate3d(0, 0, 0)
+			-ms-transform: translate3d(0, 0, 0)
+			-o-transform: translate3d(0, 0, 0)
+			transform: translate3d(0, 0, 0)
+	.describe
+		p, h2
+			-webkit-transition: 0.35s transform
+			-o-transition: 0.35s transform
+			transition: 0.35s transform
+			position: absolute
+		text-align: left
+		padding: 28% 35px 0
+		p
+			color: #b2b3b3
+			font-size: 12px
+			text-transform: none
+			margin-bottom: 65px
+			-webkit-transform: translate3d(150%, 0, 0)
+			-ms-transform: translate3d(150%, 0, 0)
+			-o-transform: translate3d(150%, 0, 0)
+			transform: translate3d(150%, 0, 0)
+			top: 43%
+		h2
+			color: #19bd9a
+			margin-bottom: 65px
+			top: 24%
+
+.picture-row
+	margin-top: 55px
+
+.first, .second, .third, .four
+	padding-left: 0
+	padding-right: 0
+	display: inline-block
+
+.picture-row
+	.first div
+		&:nth-child(1)
+			background-image: url("img/Layer 1_.jpg")
+			height: 360px
+		&:nth-child(2)
+			background-image: url("img/Layer 2_.jpg")
+			height: 362px
+		&:nth-child(3)
+			background-image: url("img/Layer 3_.jpg")
+			height: 212px
+	.second div
+		&:nth-child(1)
+			background-image: url("img/Layer 4_.jpg")
+			height: 230px
+		&:nth-child(2)
+			background-image: url("img/Layer 5_.jpg")
+			height: 342px
+		&:nth-child(3)
+			background-image: url("img/Layer 6_.jpg")
+			height: 362px
+	.third div
+		&:nth-child(1)
+			background-image: url("img/Layer 7_.jpg")
+			height: 300px
+		&:nth-child(2)
+			background-image: url("img/Layer 8_.jpg")
+			height: 374px
+		&:nth-child(3)
+			background-image: url("img/Layer 9_.jpg")
+			height: 260px
+	.four div
+		&:nth-child(1)
+			background-image: url("img/Layer 10_.jpg")
+			height: 360px
+		&:nth-child(2)
+			background-image: url("img/Layer 11_.jpg")
+			height: 270px
+		&:nth-child(3)
+			background-image: url("img/Layer 12_.jpg")
+			height: 304px
+
+.line-bottom
+	height: 2px
+	width: 0
+	background-color: #19bd9a
+	position: relative
+	left: 50%
+	-webkit-transition: 0.5s all ease-in-out
+	-o-transition: 0.5s all ease-in-out
+	transition: 0.5s all ease-in-out
+
+.navbar li:hover .line-bottom
+	width: 50%
+	left: 20%
+
+.inline-href
+	display: inline-block
+	background-color: #000
+	height: 27px
+	width: 27px
+	text-align: center
+	border-radius: 100px
+	line-height: 26px
+	position: absolute
+	top: 73%
+	@include transition(0.3s, all, ease-in-out)
+.inline-href:hover
+	background: $blue
+.inline-href:last-child
+	left: 70px
+
+.start	
+	margin: 0 17px
+	background: url("img/Layer start.jpg")
+	-webkit-background-size: cover
+	background-size: cover
+	.button
+		padding-top: 25px
+	.bottom-opacity
+		padding: 5px 10px 55px
+
+.portfolio
+	padding-bottom: 95px
+
+.photo
+	-webkit-background-size: cover
+	background-size: cover
+	height: 365px	 
+	width: 290px
+	background: url("img/Layer Person_1.jpg")
+
+.progress-bar
+	float: right
+
+.about-person
+	overflow: hidden
+	text-align: right
+
+h3
+	font-size: 20px
+	font-weight: 400
+	color: #525252
+	letter-spacing: 1px
+	margin-bottom: 0
+
+.italic	
+	margin-bottom: 30px
+	font-style: italic
+
+.progress-bar
+	> div
+		width: 330px
+		margin-top: 30px
+	h4
+		font-family: "Times New Roman"
+		font-size: 16px
+		float: left
+		text-transform: uppercase
+		font-weight: 100
+		letter-spacing: 1px
+	p
+		float: right
+		font-family: "SourceSansPro"
+
+.progress-line
+	height: 4px
+	width: 100%
+	background-color: #e1e4e9
+	position: relative
+	overflow: hidden
+	.line
+		background-color: #19bd9a
+		position: absolute
+		left: 0
+
+.bar1 .line
+	width: 80%
+
+.bar2 .line
+	width: 65%
+
+.bar3 .line
+	width: 75%
+
+.owl-dots,
+	text-align: center
+
+.lets-talk h3
+	color: #fff
+
+.img_1
+	background: url("img/Layer Talk_1.jpg") 50% 50%
+	background: url("img/Layer Talk_2.jpg") 50% 50%
+
+.overlay-2
+	background-color: rgba(0, 0, 0, 0.9)
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	padding: 60px 0 55px
+
+.lets-talk a
+	-webkit-transition: 0.3s all ease-in-out
+	-o-transition: 0.3s all ease-in-out
+	transition: 0.3s all ease-in-out
+	&:hover
+		background: #fff
+		color: rgba(0, 0, 0, 0.8)
+
+.testimonials
+	padding-bottom: 15px
+	h4
+		text-transform: uppercase
+		margin-top: 25px
+	p:last-child
+		font-size: 14px
+	img
+		height: 130px
+		width: 130px !important
+
+//Ent transformed css 
+
+.news
+	position: relative
+	background: url("img/Layer bg-carousel.jpg")
+	h2, h3
+		color: #fff
+	h2
+		margin-bottom: 42px
+	.lates
+		margin-top: 102px
+	.bot-news
+		margin-left: 70px
+	.visit_our_blog h2
+		margin-top: 90px
+	.at-vero p:nth-child(3)
+		margin-top: 55px
+	.video
+		margin-top: 100px
+		height: 350px
+		width: 80%
+	.overlay-2
+		padding: 75px 95px 95px
+
+.head > p
+	color: $gray
+
+.at-vero p:first-child
+	text-transform: uppercase
+	font-style: italic
+	font-size: 14px
+
+.at-vero p:nth-child(2)
+	color: #464646
+	font-size: 13px
+	margin-top: 10px
+
+.btn-2
+	color: $gray
+	margin-top: 50px
+	display: block
+
+.our-price
+	padding-bottom: 45px
+
+.offers
+	padding: 55px 0
+
+.offer:last-child
+	margin-right: 0
+
+.offer
+	margin-right: 60px
+	display: inline-block
+	width: 235px
+	.about-offer
+		@include transition(0.3s, height, ease-in-out)
+		text-align: left
+		overflow: hidden
+		background: #fff
+		height: 0px
+		p
+			margin-bottom: 10px
+		div
+			margin: 30px 0 30px 35px
+	.top-board
+		height: 65px
+	.top-board p
+		color: #fff
+		background: $blue
+	.top-board p:first-child
+		padding: 20px 0
+		text-transform: uppercase
+		font-size: 18px
+		font-weight: bold
+	.top-board p:last-child
+		font-size: 18px
+		display: none
+		padding: 20px 0
+
+.price
+	height: 235px
+	overflow: hidden
+	background: #fff
+	@include transition(0.3s, height, ease-in-out)
+	p:first-child
+		margin-top: 60px
+		font-size: 42px
+		font-family: "SourceSansPro"
+		font-weight: bold
+		color: $blue
+	p:last-child
+		margin-bottom: 100px
+		font-size: 20px
+		letter-spacing: 1px
+
+.offer:hover .price
+	height: 0
+
+.offer:hover .about-offer
+	height: 235px
+
+.offer:hover .offer p,
+.offer:hover .top-board p:last-child
+	display: block
+
+.offer:hover .top-board p:first-child
+	display: none
+
+.subscribe-us
+	background: url("img/Subscribe.jpg") 0 76%
+	background-size: cover
+	.overlay-2
+		padding: 75px 20px 95px
+
+.email-input
+	background: rgba(0, 0, 0, 0)
+	padding: 8px 20px
+	border: 1px solid
+	width: 100%
+
+.subscribe-us h2,
+.submit
+	color: #fff
+
+.submit
+	padding: 10px 50px
+	background: $blue
+	border: none
+	text-transform: uppercase
+	font-size: 14px
+	float: left
+
+.email-input::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+	font-size: 14px
+
+.email-input::-moz-placeholder         
+	color: #fff
+	opacity: 1
+	font-size: 14px
+
+.email-input:-moz-placeholder          
+	color: #fff
+	opacity: 1
+	font-size: 14px
+
+.email-input:-ms-input-placeholder     
+	color: #fff
+	opacity: 1
+	font-size: 14px
+
+.input
+	margin-top: 55px
+	.row
+		div:first-child
+			padding-right: 5px
+		div:last-child
+			padding-left: 5px
+
+.comunicate
+	padding-bottom: 25px
+	width: 270px
+	background: #fff
+	margin: 0 auto
+	h3
+		font-size: 16px
+		letter-spacing: 0
+		padding: 25px 0 15px
+	h3, p
+		text-transform: uppercase
+	p
+		font-size: 14px
+	.overlay-2
+		opacity: 0
+		background: rgba(0, 0, 0, .4)
+		@include transition(.6s, all, ease-in-out)
+	.fa
+		font-size: 32px
+
+.mail .image
+	background: url("img/Mail.png")
+.office .image
+	background: url("img/office.png")
+.phone .image
+	background: url("img/phone.png")
+.mail .image, .office .image, .phone .image
+	height: 145px
+	-webkit-background-size: 110%
+	background-size: 110%
+	background-position: 0 50%
+	@include transition(.6s, background-size, ease-in-out)
+
+.mail
+	float: right
+.phone
+	float: left
+
+.contact-us
+	padding-bottom: 100px
+	.row
+		margin-top: 60px
+
+.comunicate:hover .overlay-2
+	opacity: 1
+.comunicate:hover .image
+	background-size: 120%
+	
+.form-data
+	input
+		width: 270px
+		padding: 7px 20px
+	#name
+		float: right
+	#subject
+		float: left
+
+#textarea
+	width: 100%
+	margin-top: 30px
+	padding: 0 40px
+
+.subscribe-now
+	padding-bottom: 130px
+	.submit
+		width: 100%
+		margin-top: 30px
+
+.comment,
+.btn-submit
+	padding: 0 105px
+
+.map
+	position: relative
+	.map-button
+		width: 18px
+		height: 18px
+		border-radius: 100px
+		background: $blue
+		background: #19bd9a
+		display: inline-block
+		line-height: 17px
+	.fa
+		font-size: 14px !important
+		line-height: 0
+	.overlay-2
+		position: absolute
+		background: rgba(0, 0, 0, .5)
+		padding-top: 245px
+	h3
+		color: #fff
+		text-transform: uppercase
+		font-size: 16px
+		display: inline
+
+footer
+	p
+		margin-bottom: 35px
+	h2
+		font-weight: bold
+		letter-spacing: 1px
+		margin-bottom: 10px
+
+.radius
+	border-radius: 100px
+	display: inline-block
+	height: 26px
+	width: 26px
+	margin-right: 8px
+	line-height: 26px
+.radius:last-child
+	margin-right: 0
+
+.facebook
+	background: #3b5998
+.twitter
+	background: #26a6d1
+.info
+	background: #0e76a8
+.instagram
+	background: #3f729b
+.vine
+	background: #86c9ef
+
+.details a:hover .btn-describe
+	display: none
+
+#page-preloader
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	background: url(img/imgload1.jpg)
+	z-index: 100500
+	background-size: cover
+
+.spinner
+	height: 100%
+	width: 100%
+	background: rgba(0, 0, 0, .8)
+
+//colors
+$black: rgb(0,0,0)
+$white: rgb(255,255,255)
+
+//fonts
+$font_0: Arial
+
+#inTurnFadingTextG 
+	width: 175px
+	margin: auto
+	text-align: center
+	position: relative
+	top: 45%
+
+.inTurnFadingTextG 
+	color: $white
+	font-family: $font_0
+	font-size: 40px
+	text-decoration: none
+	font-weight: bold
+	font-style: normal
+	display: inline
+	animation-name: bounce_inTurnFadingTextG
+	animation-duration: 2.09s
+	animation-iteration-count: infinite
+	animation-direction: normal
+
+#inTurnFadingTextG_1 
+	animation-delay: 0.75s
+
+#inTurnFadingTextG_2 
+	animation-delay: 0.9s
+
+#inTurnFadingTextG_3 
+	animation-delay: 1.05s
+
+#inTurnFadingTextG_4 
+	animation-delay: 1.2s
+
+#inTurnFadingTextG_5 
+	animation-delay: 1.35s
+
+#inTurnFadingTextG_6 
+	animation-delay: 1.5s
+
+@keyframes bounce_inTurnFadingTextG 
+	0% 
+		color: $black
+
+	100% 
+		color: $white
+
+
+@-o-keyframes bounce_inTurnFadingTextG 
+	0% 
+		color: $black
+
+	100% 
+		color: $white
+
+
+@-ms-keyframes bounce_inTurnFadingTextG 
+	0% 
+		color: $black
+
+	100% 
+		color: $white
+
+
+@-webkit-keyframes bounce_inTurnFadingTextG 
+	0% 
+		color: $black
+
+	100% 
+		color: $white
+
+
+@-moz-keyframes bounce_inTurnFadingTextG 
+	0% 
+		color: $black
+
+	100% 
+		color: $white
